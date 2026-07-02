@@ -31,3 +31,5 @@ jobs:
           test -f index.html
           test -f image.html
           test -f style.css
+
+          Hi
