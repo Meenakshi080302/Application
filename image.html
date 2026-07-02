@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Happy Weekend Greeting</title>
+  <desc id="desc">A stylish animated SVG greeting that says Happy Weekend with colorful gradients, sparkles, and decorative elements.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A5C"/>
+      <stop offset="45%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#7BDFF2"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff5e6" stop-opacity="0.92"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4D6D"/>
+      <stop offset="50%" stop-color="#F77F00"/>
+      <stop offset="100%" stop-color="#4361EE"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#4B2E1E" flood-opacity="0.22"/>
+    </filter>
+
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#ffffff" fill-opacity="0.2"/>
+    </pattern>
+
+    <style>
+      .title {
+        font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .sparkle {
+        transform-origin: center;
+        animation: twinkle 2.2s ease-in-out infinite;
+      }
+      .floatA { animation: floatA 6s ease-in-out infinite; }
+      .floatB { animation: floatB 7s ease-in-out infinite; }
+      .shine { animation: shine 3.8s linear infinite; }
+
+      @keyframes twinkle {
+        0%, 100% { opacity: .25; transform: scale(.8); }
+        50% { opacity: 1; transform: scale(1.25); }
+      }
+      @keyframes floatA {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes floatB {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(12px); }
+      }
+      @keyframes shine {
+        0% { transform: translateX(-420px); opacity: 0; }
+        20% { opacity: .35; }
+        50% { opacity: .55; }
+        80% { opacity: .2; }
+        100% { transform: translateX(1280px); opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+  <rect width="1200" height="700" fill="url(#dots)"/>
+
+  <!-- Ambient blobs -->
+  <g opacity="0.7" filter="url(#blurGlow)">
+    <circle cx="180" cy="130" r="95" fill="#ffffff"/>
+    <circle cx="1030" cy="170" r="110" fill="#fff3d6"/>
+    <circle cx="1080" cy="560" r="120" fill="#d6f7ff"/>
+  </g>
+
+  <!-- Decorative wave -->
+  <path d="M0,520 C200,440 420,610 620,520 C820,430 1010,560 1200,500 L1200,700 L0,700 Z" fill="#ffffff" fill-opacity="0.22"/>
+
+  <!-- Main greeting card -->
+  <g filter="url(#softShadow)">
+    <rect x="170" y="130" width="860" height="420" rx="36" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.8"/>
+    <rect x="190" y="150" width="820" height="380" rx="28" fill="#ffffff" fill-opacity="0.25"/>
+
+    <!-- Card glow -->
+    <ellipse cx="600" cy="210" rx="300" ry="95" fill="url(#glow)" opacity="0.5"/>
+
+    <!-- Title -->
+    <text x="600" y="300" text-anchor="middle" class="title" font-size="96" fill="url(#textGrad)">HAPPY</text>
+    <text x="600" y="400" text-anchor="middle" class="title" font-size="102" fill="url(#textGrad)">WEEKEND</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="455" text-anchor="middle" class="subtitle" font-size="30" fill="#4A5568">
+      Relax, recharge, and enjoy your vibe
+    </text>
+
+    <!-- Animated shine streak -->
+    <g class="shine">
+      <rect x="0" y="150" width="180" height="380" fill="#ffffff" fill-opacity="0.26" transform="rotate(12 90 340)"/>
+    </g>
+  </g>
+
+  <!-- Confetti -->
+  <g opacity="0.9">
+    <circle class="floatA" cx="130" cy="95" r="7" fill="#FF4D6D"/>
+    <rect class="floatB" x="240" y="72" width="12" height="12" rx="2" fill="#4361EE"/>
+    <circle class="floatA" cx="1040" cy="88" r="8" fill="#06D6A0"/>
+    <rect class="floatB" x="1120" y="118" width="14" height="14" rx="3" fill="#F77F00"/>
+    <circle class="floatB" cx="105" cy="610" r="8" fill="#8338EC"/>
+    <rect class="floatA" x="1090" y="600" width="12" height="12" rx="2" fill="#EF476F"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g>
+    <g class="sparkle" style="animation-delay:0s">
+      <path d="M290 210 L300 238 L328 248 L300 258 L290 286 L280 258 L252 248 L280 238 Z" fill="#ffffff" fill-opacity="0.95"/>
+    </g>
+    <g class="sparkle" style="animation-delay:.6s">
+      <path d="M920 230 L928 252 L950 260 L928 268 L920 290 L912 268 L890 260 L912 252 Z" fill="#ffffff" fill-opacity="0.95"/>
+    </g>
+    <g class="sparkle" style="animation-delay:1.2s">
+      <path d="M240 500 L248 522 L270 530 L248 538 L240 560 L232 538 L210 530 L232 522 Z" fill="#fff7df"/>
+    </g>
+    <g class="sparkle" style="animation-delay:1.8s">
+      <path d="M970 500 L978 522 L1000 530 L978 538 L970 560 L962 538 L940 530 L962 522 Z" fill="#fff7df"/>
+    </g>
+  </g>
+
+  <!-- Small sun icon -->
+  <g transform="translate(1020 520)" class="floatA">
+    <circle r="34" fill="#FFD166"/>
+    <circle r="20" fill="#FFE8A3"/>
+    <g stroke="#FFD166" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-52" x2="0" y2="-72"/>
+      <line x1="0" y1="52" x2="0" y2="72"/>
+      <line x1="-52" y1="0" x2="-72" y2="0"/>
+      <line x1="52" y1="0" x2="72" y2="0"/>
+      <line x1="-37" y1="-37" x2="-52" y2="-52"/>
+      <line x1="37" y1="37" x2="52" y2="52"/>
+      <line x1="-37" y1="37" x2="-52" y2="52"/>
+      <line x1="37" y1="-37" x2="52" y2="-52"/>
+    </g>
+  </g>
+</svg>

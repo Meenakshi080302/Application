@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Performance Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texture"></div>
+
+    <header class="report-hero">
+        <div class="hero-topline">Internal Strategy Document</div>
+        <h1>Q2 Operations Report</h1>
+        <p class="hero-subtitle">Performance, risks, and recommendations across Product, Delivery, and Customer Success</p>
+        <div class="hero-meta">
+            <div>
+                <span class="meta-label">Prepared by</span>
+                <span class="meta-value">Strategy Office</span>
+            </div>
+            <div>
+                <span class="meta-label">Period</span>
+                <span class="meta-value">Apr 2026 - Jun 2026</span>
+            </div>
+            <div>
+                <span class="meta-label">Version</span>
+                <span class="meta-value">1.0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="report-grid">
+        <section class="card executive-summary">
+            <h2>Executive Summary</h2>
+            <p>
+                Q2 closed with strong revenue growth and improved service quality. Delivery velocity exceeded target by 8%, while customer churn dropped below 4%. The most significant headwind remains dependency risk in the analytics pipeline, which requires immediate modernization in Q3.
+            </p>
+        </section>
+
+        <section class="card kpi-panel">
+            <h2>Key Indicators</h2>
+            <div class="kpi-grid">
+                <article class="kpi">
+                    <p class="kpi-label">Revenue Growth</p>
+                    <p class="kpi-value">+18.4%</p>
+                    <p class="kpi-note positive">Target +15%</p>
+                </article>
+                <article class="kpi">
+                    <p class="kpi-label">Customer Churn</p>
+                    <p class="kpi-value">3.7%</p>
+                    <p class="kpi-note positive">Target < 4.2%</p>
+                </article>
+                <article class="kpi">
+                    <p class="kpi-label">On-time Delivery</p>
+                    <p class="kpi-value">92%</p>
+                    <p class="kpi-note positive">Target 90%</p>
+                </article>
+                <article class="kpi">
+                    <p class="kpi-label">Incident Rate</p>
+                    <p class="kpi-value">1.9%</p>
+                    <p class="kpi-note warning">Target 1.5%</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="card trend-panel">
+            <h2>Business Unit Performance</h2>
+            <div class="bars">
+                <div class="bar-row">
+                    <span>Platform</span>
+                    <div class="bar-track"><div class="bar-fill" style="--value: 88%"></div></div>
+                    <strong>88</strong>
+                </div>
+                <div class="bar-row">
+                    <span>Data</span>
+                    <div class="bar-track"><div class="bar-fill" style="--value: 72%"></div></div>
+                    <strong>72</strong>
+                </div>
+                <div class="bar-row">
+                    <span>Support</span>
+                    <div class="bar-track"><div class="bar-fill" style="--value: 84%"></div></div>
+                    <strong>84</strong>
+                </div>
+                <div class="bar-row">
+                    <span>Sales Ops</span>
+                    <div class="bar-track"><div class="bar-fill" style="--value: 79%"></div></div>
+                    <strong>79</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="card timeline-panel">
+            <h2>Quarter Timeline</h2>
+            <ol class="timeline">
+                <li>
+                    <h3>April</h3>
+                    <p>Launched onboarding automation. New-user activation improved by 11% in first 30 days.</p>
+                </li>
+                <li>
+                    <h3>May</h3>
+                    <p>Migrated payment events to event-stream architecture, reducing reconciliation lag.</p>
+                </li>
+                <li>
+                    <h3>June</h3>
+                    <p>Completed resilience testing in production-like environment; recovered RTO by 24%.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="card risk-panel">
+            <h2>Risk Register</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Risk</th>
+                        <th>Impact</th>
+                        <th>Owner</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Legacy ETL bottleneck</td>
+                        <td>High</td>
+                        <td>Data Eng</td>
+                        <td><span class="tag critical">Escalated</span></td>
+                    </tr>
+                    <tr>
+                        <td>Vendor contract renewal</td>
+                        <td>Medium</td>
+                        <td>Finance</td>
+                        <td><span class="tag watch">Monitoring</span></td>
+                    </tr>
+                    <tr>
+                        <td>Support staffing gap</td>
+                        <td>Medium</td>
+                        <td>People Ops</td>
+                        <td><span class="tag progress">In Progress</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card recommendation-panel">
+            <h2>Q3 Recommendations</h2>
+            <ul>
+                <li>Prioritize ETL modernization sprint in first month with dedicated task force.</li>
+                <li>Expand incident response playbooks for cross-team ownership and faster escalation.</li>
+                <li>Invest in customer health scoring to reduce high-risk account churn by 1 point.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="report-footer">
+        <p>Confidential Report | Strategy Office | July 2026</p>
+    </footer>
+</body>
+</html>
